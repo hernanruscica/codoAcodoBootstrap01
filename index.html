@@ -16,98 +16,95 @@
 
     <!--seccion de la cabecera-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-black bg-opacity-75 py-1">
-          <div class="container row justify-content-between">
-            <!--titulo y logo de la barra de navegacion-->
-            <div class="col-5">
-              <div class="row align-items-center justify-content-start">
-                <img src="/imagenes_integrador_front/codoacodo.png" class="img-fluid col-3" alt="logo codo a codo">
-                <a class="navbar-brand text-light col-1" href="#"><h1 class="fw-normal fs-3">Conf Bs As</h1></a>
-              </div>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg bg-black bg-opacity-75 ">
+          <div class="container ">
+            <a href="#" class="navbar-brand text-light fs-3 ">
+              <img src="imagenes_integrador_front/codoacodo.png"
+                width="120px" alt="Logo de codo a codo">
+              Conf Bs As
+            </a>
+            <button class="navbar-toggler text-bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fs-6"></span>
             </button>
-             <!--enlaces del navbar--> <!--enlaces del navbar-->
-            <div class="collapse navbar-collapse col-7" id="navbarSupportedContent">
-              <ul class="navbar-nav  h4 fw-normal fs-4">
-                <li class="nav-item mx-2">
-                  <a class="nav-link active text-light" aria-current="page" href="#conferencia">La conferencia</a>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+              <ul class="navbar-nav fs-5 fw-semibold">
+                <li class="nav-item">
+                  <a href="#conferencia" class="nav-link active text-light" aria-current="page">La conferencia</a>
                 </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link text-secondary" href="#oradores">Los oradores</a>
-                </li>          
-                <li class="nav-item mx-2">
-                  <a class="nav-link text-secondary" href="#lugaryfecha">El lugar y la fecha</a>
-                </li> 
-                <li class="nav-item mx-2">
-                  <a class="nav-link text-secondary" href="#serorador">Conviértete en orador</a>
-                </li> 
-                <li class="nav-item text-secondary mx-2">
-                  <a class="nav-link text-success" href="#comprartickets">Comprar tickets</a>
-                </li>                 
-              </ul>              
+                <li class="nav-item">
+                  <a href="#oradores" class="nav-link text-secondary" >Los oradores</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#lugaryfecha" class="nav-link  text-secondary" >El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#serorador" class="nav-link  text-secondary" >Conviértete en orador</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#tickets" class="nav-link text-success" >Comprar tickets</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </nav>  
+        </nav>
         
-        <!--Hero image con una card en el interior con titulo, parrafos y botones-->      
-             
-            <div class="hero_image " style = "height: 75vh;" >    
-              <div class="container mx-auto row h-100 align-items-center justify-content-end ">
-                <div class="card col-7 h-auto p-4 bg-transparent text-light">
-                  <div class="text-end fs-4 ">
-                    <h2>Conf Bs As</h2>
-                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet.
-                        Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para tí. Te esperamos.
-                    </p>
-                    <button class="btn btn-outline-light">Quiero ser orador</button>
-                    <button class="btn btn-success">Comprar tickets</button>
-                  </div>
-                </div>               
-              </div>            
-            </div>           
+        <!--Hero image con una card en el interior con titulo, parrafos y botones-->                   
+        <div class="hero_image " style = "height: 75vh;" >    
+          <div class="container mx-auto row h-100 align-items-center justify-content-end ">
+            <div class="card col-sm-10 col-lg-7 h-auto p-0 bg-transparent text-light">
+              <div class="text-end fs-5 ">
+                <h2>Conf Bs As</h2>
+                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet.
+                    Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para tí. Te esperamos.
+                </p>                
+                <button class="btn btn-outline-light my-2 fs-6">Quiero ser orador</button>
+                <button class="btn btn-success  my-2  fs-6">Comprar tickets</button>                
+              </div>
+            </div>               
+          </div>            
+        </div>           
     </header>
     
-        <!--seccion de los oradores-->
-        <section class="container-md mx-auto">
-            <h2>conoce a los <span>oradores</span></h2>
-            <div class="cards row">
-                <div class="card col-3" style="width: 18rem;">
-                    <img src="/imagenes_integrador_front/steve.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <span class="badge text-bg-warning">Javascript</span>
-                      <span class="badge text-bg-info">React</span>
-                      <h3>Steve Jobs</h3>
-                      <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate assumenda fugit fugiat deleniti sit dignissimos quia nulla tempore neque sequi magni, esse amet consequuntur voluptate quisquam rerum illum quae doloribus?
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card col-3 mx-4" style="width: 18rem;">
-                    <img src="/imagenes_integrador_front/bill.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <span class="badge text-bg-warning">Javascript</span>
-                      <span class="badge text-bg-info">React</span>
-                      <h3>Bill Gates</h3>
-                      <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate assumenda fugit fugiat deleniti sit dignissimos quia nulla tempore neque sequi magni, esse amet consequuntur voluptate quisquam rerum illum quae doloribus?
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card col-3" style="width: 18rem;">
-                    <img src="/imagenes_integrador_front/ada.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <span class="badge text-bg-secondary">Negocios</span>
-                        <span class="badge text-bg-danger">Startups</span>  
-                      <h3>Ada Lovelace</h3>  
-                      <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate assumenda fugit fugiat deleniti sit dignissimos quia nulla tempore neque sequi magni, esse amet consequuntur voluptate quisquam rerum illum quae doloribus?
-                      </p>
-                    </div>
-                  </div>                  
+    <!--seccion de los oradores-->
+    <section class="container-fluid">
+        
+        <h2 class="h4 fw-light text-center" >conoce a los <br><span class="fw-bold">oradores</span></h2>        
+        <div class="cards row justify-content-center">
+            <div class="card col-lg-3  m-sm-3 p-0" style="width: 18rem;">
+                <img src="imagenes_integrador_front/steve.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <span class="badge text-bg-warning">Javascript</span>
+                  <span class="badge text-bg-info">React</span>
+                  <h3>Steve Jobs</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate assumenda fugit fugiat deleniti sit dignissimos quia nulla tempore neque sequi magni, esse amet consequuntur voluptate quisquam rerum illum quae doloribus?
+                  </p>
+                </div>
             </div>
-        </section>
+            <div class="card col-lg-3 m-sm-3 p-0" style="width: 18rem;">
+              <img src="imagenes_integrador_front/bill.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <span class="badge text-bg-warning">Javascript</span>
+                <span class="badge text-bg-info">React</span>
+                <h3>Bill Gates</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate assumenda fugit fugiat deleniti sit dignissimos quia nulla tempore neque sequi magni, esse amet consequuntur voluptate quisquam rerum illum quae doloribus?
+                </p>
+              </div>
+            </div>
+            <div class="card col-lg-3 m-sm-3 p-0" style="width: 18rem;">
+              <img src="imagenes_integrador_front/ada.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <span class="badge text-bg-secondary">Negocios</span>
+                  <span class="badge text-bg-danger">Startups</span>  
+                <h3>Ada Lovelace</h3>  
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate assumenda fugit fugiat deleniti sit dignissimos quia nulla tempore neque sequi magni, esse amet consequuntur voluptate quisquam rerum illum quae doloribus?
+                </p>
+              </div>
+            </div>                  
+        </div>
+    </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
