@@ -16,40 +16,41 @@
 
     <!--seccion de la cabecera-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-black bg-opacity-75 ">
-          <div class="container ">
-            <a href="#" class="navbar-brand text-light fs-3 ">
-              <img src="imagenes_integrador_front/codoacodo.png"
-                width="120px" alt="Logo de codo a codo">
-              Conf Bs As
-            </a>
-            <button class="navbar-toggler text-bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon fs-6"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-              <ul class="navbar-nav fs-5 fw-semibold">
-                <li class="nav-item">
-                  <a href="#conferencia" class="nav-link active text-light" aria-current="page">La conferencia</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#oradores" class="nav-link text-secondary" >Los oradores</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#lugaryfecha" class="nav-link  text-secondary" >El lugar y la fecha</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#serorador" class="nav-link  text-secondary" >Conviértete en orador</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#tickets" class="nav-link text-success" >Comprar tickets</a>
-                </li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-lg bg-black bg-opacity-75 ">
+        <div class="container ">
+          <a href="#" class="navbar-brand text-light fs-3 ">
+            <img src="imagenes_integrador_front/codoacodo.png"
+              width="120px" alt="Logo de codo a codo">
+            Conf Bs As
+          </a>
+          <button class="navbar-toggler text-bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fs-6"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+            <ul class="navbar-nav fs-5 fw-semibold">
+              <li class="nav-item">
+                <a href="#conferencia" class="nav-link active text-light" aria-current="page">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a href="#oradores" class="nav-link text-secondary" >Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a href="#lugaryfecha" class="nav-link  text-secondary" >El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a href="#serorador" class="nav-link  text-secondary" >Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <!--no hay una seccion de tickets, deberia enlazar a otra pagina-->
+                <a href="#" class="nav-link text-success" >Comprar tickets</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
         
         <!--Hero image con una card en el interior con titulo, parrafos y botones-->                   
-        <div class="hero_image " style = "height: 75vh;" >    
+        <div class="hero_image " style = "height: 75vh;" id="conferencia">    
           <div class="container mx-auto row h-100 align-items-center justify-content-end ">
             <div class="card col-sm-10 col-lg-7 h-auto p-0 bg-transparent text-light">
               <div class="text-end fs-5 ">
@@ -66,11 +67,11 @@
     </header>
     
     <!--seccion de los oradores-->
-    <section class="container-fluid">
+    <section class="container-fluid" id="oradores">
         
-        <h2 class="h4 fw-light text-center" >conoce a los <br><span class="fw-bold">oradores</span></h2>        
+        <h2 class="h4 fw-light text-center my-3" >conoce a los <br><span class="fw-bold">oradores</span></h2>        
         <div class="cards row justify-content-center">
-            <div class="card col-lg-3  m-sm-3 p-0" style="width: 18rem;">
+            <div class="card col-lg-3 m-3 p-0" style="width: 18rem;">
                 <img src="imagenes_integrador_front/steve.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <span class="badge text-bg-warning">Javascript</span>
@@ -81,7 +82,7 @@
                   </p>
                 </div>
             </div>
-            <div class="card col-lg-3 m-sm-3 p-0" style="width: 18rem;">
+            <div class="card col-lg-3 m-3 p-0" style="width: 18rem;">
               <img src="imagenes_integrador_front/bill.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <span class="badge text-bg-warning">Javascript</span>
@@ -92,7 +93,7 @@
                 </p>
               </div>
             </div>
-            <div class="card col-lg-3 m-sm-3 p-0" style="width: 18rem;">
+            <div class="card col-lg-3 m-3 p-0" style="width: 18rem;">
               <img src="imagenes_integrador_front/ada.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
                   <span class="badge text-bg-secondary">Negocios</span>
@@ -106,10 +107,11 @@
         </div>
     </section>
 
-    <section class="container-fluid my-5 ">
+    <!--Lugar y Fecha-->
+    <section class="container-fluid my-5 " id="lugaryfecha">
       <div class="row">
         <div class="col-md-6 col-sm-12 p-0">
-          <img class="img-fluid" src="/imagenes_integrador_front/honolulu.jpg" alt="">
+          <img class="img-fluid" src="imagenes_integrador_front/honolulu.jpg" alt="">
         </div>
         <div class="col-md-6 col-sm-12 bg-black bg-opacity-75 text-light p-4">
           <h2>Bs. As - Octubre</h2>
@@ -124,6 +126,7 @@
       </div>
     </section>
 
+    <!--la seccion del formulario para ser orador-->
     <section class="col-9 col-md-6  mx-auto mb-4" id="serorador">
       <div>
         <h2 class="h4 fw-light text-center" >Conviértete en un <br><span class="fw-bold">orador</span></h2>        
@@ -142,8 +145,20 @@
           </div>
         </div>
       </form>
-      <button class="btn btn-success w-100">Enviar</button>
+      <button class="btn btn-success w-100 border-0" style="background-color: #96c93e">Enviar</button>
     </section>
+
+    <footer class="container-fluid" style="background-color: #1e4f6d;">      
+      <div class="container row justify-content-between mx-auto py-4 text-center">
+          <a href="#" class="col-md-1 link-light text-decoration-none">Preguntas frecuentes</a>        
+          <a href="#" class="col-md-1 link-light text-decoration-none">Contáctanos</a>        
+          <a href="#" class="col-md-1 link-light text-decoration-none">Prensa</a>        
+          <a href="#" class="col-md-1 link-light text-decoration-none">conferencias</a>
+          <a href="#" class="col-md-2 link-light text-decoration-none">Términos y condiciones</a>
+          <a href="#" class="col-md-1 link-light text-decoration-none">Privacidad</a>
+          <a href="#" class="col-md-1 link-light text-decoration-none">Estudiantes</a>
+      </div>        
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
