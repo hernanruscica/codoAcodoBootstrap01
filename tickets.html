@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--
+    Trabajo integrador del modulo de Bootstrap para el curso Codo a Codo de la ciudad autonoma de Buenos Aires.
+    Realizado por Cesar Hernan Ruscica D.N.I.: 28470361 Comision 22578, 19 de Septiembre de 2022
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codo a Codo - Trabajo integrador Bootstrap</title>
+    <!--Bootstrap Css Cdn link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--seccion de la cabecera-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black bg-opacity-75 ">
+        <div class="container ">
+          <a href="#" class="navbar-brand text-light fs-3 ">
+            <img src="imagenes_integrador_front/codoacodo.png"
+              width="120px" alt="Logo de codo a codo">
+            Conf Bs As
+          </a>
+          <button class="navbar-toggler text-bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fs-6"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+            <ul class="navbar-nav fs-5 fw-semibold">
+              <li class="nav-item">
+                <a href="index.html#conferencia" class="nav-link active text-light" aria-current="page">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#oradores" class="nav-link text-secondary" >Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#lugaryfecha" class="nav-link  text-secondary" >El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#serorador" class="nav-link  text-secondary" >Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <!--no hay una seccion de tickets, deberia enlazar a otra pagina-->
+                <a href="#" class="nav-link text-success" >Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        
+        <!--Hero image con una card en el interior con titulo, parrafos y botones-->                   
+                 
+    </header>
+    
+    <!--seccion de los oradores-->
+    
+    <!--Lugar y Fecha-->   
+
+    <!--la seccion del formulario para ser orador-->
+    <section class="container mx-auto"> 
+      <div class="row" >
+        <div class="col-3 ">
+          <h2 >Estudiante</h2>
+          <p>Tienen un descuento</p>
+          <p id="descuento-estudiante">80%</p>
+          <p>* presentar documentacion</p>
+        </div>
+        <div class="col-3">
+          <h2 >Trainee</h2>
+          <p>Tienen un descuento</p>
+          <p id="descuento-trainee">50%</p>
+          <p>* presentar documentacion</p>
+        </div>
+        <div class="col-3">
+          <h2 >Junior</h2>
+          <p>Tienen un descuento</p>
+          <p id="descuento-junior">15%</p>
+          <p>* presentar documentacion</p>
+        </div>
+      </div>
+      <h3>VENTA <span>VALOR DE TICKET $200</span></h3>
+      <form >
+        <div class="mb-3 row">
+          <input type="text" class="form-control col " name="nombre" id="nombre" placeholder="Nombre">
+          <input type="text" class="form-control col  ms-3" name="apellido" id="apellido" placeholder="Apellido">
+        </div>
+        <div class="mb-3 row">
+          <input type="text" class="form-control col" name="correo" id="correo" placeholder="Correo">
+        </div>
+        <div class="mb-3 row">
+          <div class="col p-0">
+            <label for="cantidad" class="form-label">Cantidad</label>
+            <input type="text" class="form-control " name="cantidad" id="cantidad" placeholder="Cantidad">
+          </div>
+          <div class="col p-0 ms-3">
+            <label for="categoria" class="form-label">Categoria</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected disabled>Seleccione categoria</option>
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+            </select>
+          </div>
+        </div>
+        <label for="cantidad" class="form-label row p-3 my-4 d-block rounded bg-info ">Total a Pagar: $</label>
+      </form>
+    </section>
+
+    <footer class="container-fluid" style="background-color: #1e4f6d;">      
+      <div class="container row justify-content-between mx-auto py-4 text-center">
+          <a href="#" class="col-md-1 link-light text-decoration-none">Preguntas frecuentes</a>        
+          <a href="#" class="col-md-1 link-light text-decoration-none">Contáctanos</a>        
+          <a href="#" class="col-md-1 link-light text-decoration-none">Prensa</a>        
+          <a href="#" class="col-md-1 link-light text-decoration-none">conferencias</a>
+          <a href="#" class="col-md-2 link-light text-decoration-none">Términos y condiciones</a>
+          <a href="#" class="col-md-1 link-light text-decoration-none">Privacidad</a>
+          <a href="#" class="col-md-1 link-light text-decoration-none">Estudiantes</a>
+      </div>        
+    </footer>
+     <!--
+    Trabajo integrador del modulo de Bootstrap para el curso Codo a Codo de la ciudad autonoma de Buenos Aires.
+    Realizado por Cesar Hernan Ruscica D.N.I.: 28470361 Comision 22578, 19 de Septiembre de 2022
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
